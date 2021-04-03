@@ -1,6 +1,6 @@
 print('Welcome to the Food App')
 name = input("Please enter your name: ")
-print('Hello ' + name)
+print(f"Hello {name}")
 products = {
     "French Fries": 10.5,
     "Big Mac": 15,
@@ -11,6 +11,5 @@ products = {
 print(products)
 product_name = input("Please select a product: ")
 prodQ = input("quantity: ")
-x = (products[product_name] * int(prodQ))
-print(str(x) + '$')
-
+x = (products[product_name] * float(prodQ))
+print(f"{x} $")
